@@ -61,7 +61,7 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={fingerPrintOutline} />
-            <IonLabel>click counter</IonLabel>
+            <IonLabel>Click Counter</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
