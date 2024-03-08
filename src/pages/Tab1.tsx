@@ -19,7 +19,7 @@ const Tab1: React.FC = () => {
         </IonHeader>
         
     <IonCard>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <img alt="Silhouette of mountains" src="../src/assets/img/avatar.PNG" />
         <IonCardHeader>
           <IonCardTitle>Manait, James Kenneth</IonCardTitle>
            <IonCardSubtitle>Student</IonCardSubtitle>
