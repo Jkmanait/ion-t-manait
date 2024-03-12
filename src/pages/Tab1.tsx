@@ -27,7 +27,7 @@ const Tab1: React.FC = () => {
 
       <IonCardContent>Nothing more, nothing less.</IonCardContent>
 
-      <IonButton id="present-alert" expand="full">Quick Facts</IonButton>
+      <IonButton id="present-alert" expand="full" color="success">Quick Facts</IonButton>
       <IonAlert
         trigger="present-alert"
         header="A Short Title Is Best"
@@ -36,7 +36,7 @@ const Tab1: React.FC = () => {
         buttons={['Action']}
       ></IonAlert>
 
-<IonButton id="open-action-sheet" expand="block">Open Action Sheet</IonButton>
+<IonButton id="open-action-sheet" expand="block" color="medium">Open Action Sheet</IonButton>
       <IonActionSheet
         trigger="open-action-sheet"
         header="Actions"
