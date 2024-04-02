@@ -46,64 +46,64 @@ const Tab3: React.FC = () => {
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('7')} className="calculator-button">7</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('8')} className="calculator-button">8</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('9')} className="calculator-button">9</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('/')} className="calculator-button">/</IonButton>
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('4')} className="calculator-button">4</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('5')} className="calculator-button">5</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('6')} className="calculator-button">6</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('*')} className="calculator-button">*</IonButton>
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('1')} className="calculator-button">1</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('2')} className="calculator-button">2</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('3')} className="calculator-button">3</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('-')} className="calculator-button">-</IonButton>
             </IonCol>
           </IonRow>
           <IonRow>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('0')} className="calculator-button">0</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('.')} className="calculator-button">.</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('=')} className="calculator-button">=</IonButton>
             </IonCol>
-            <IonCol size="3">
+            <IonCol size="2">
               <IonButton onClick={() => handleClick('+')} className="calculator-button">+</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>
         <IonRow>
-          <IonCol size="5">
+          <IonCol size="15">
             <IonInput
               value={result}
               placeholder="Result"
