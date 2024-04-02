@@ -28,7 +28,7 @@ const Tab3: React.FC = () => {
           <IonTitle>Calculator</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className="calculator-container">
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Calculator</IonTitle>
@@ -41,47 +41,75 @@ const Tab3: React.FC = () => {
                 value={input}
                 placeholder="Enter expression"
                 readonly
-                style={{ textAlign: 'right' }}
+                className="calculator-input"
               ></IonInput>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('7')}>7</IonButton>
+              <IonButton onClick={() => handleClick('7')} className="calculator-button">7</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('8')}>8</IonButton>
+              <IonButton onClick={() => handleClick('8')} className="calculator-button">8</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('9')}>9</IonButton>
+              <IonButton onClick={() => handleClick('9')} className="calculator-button">9</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('/')}>/</IonButton>
+              <IonButton onClick={() => handleClick('/')} className="calculator-button">/</IonButton>
             </IonCol>
           </IonRow>
-          {/* Add other rows of buttons here */}
           <IonRow>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('C')}>C</IonButton>
+              <IonButton onClick={() => handleClick('4')} className="calculator-button">4</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('0')}>0</IonButton>
+              <IonButton onClick={() => handleClick('5')} className="calculator-button">5</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('=')}>=</IonButton>
+              <IonButton onClick={() => handleClick('6')} className="calculator-button">6</IonButton>
             </IonCol>
             <IonCol size="3">
-              <IonButton onClick={() => handleClick('*')}>*</IonButton>
+              <IonButton onClick={() => handleClick('*')} className="calculator-button">*</IonButton>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('1')} className="calculator-button">1</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('2')} className="calculator-button">2</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('3')} className="calculator-button">3</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('-')} className="calculator-button">-</IonButton>
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('0')} className="calculator-button">0</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('.')} className="calculator-button">.</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('=')} className="calculator-button">=</IonButton>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={() => handleClick('+')} className="calculator-button">+</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>
         <IonRow>
-          <IonCol size="12">
+          <IonCol size="5">
             <IonInput
               value={result}
               placeholder="Result"
               readonly
-              style={{ textAlign: 'right', fontWeight: 'bold' }}
+              className="calculator-input"
+              style={{ fontWeight: 'bold' }}
             ></IonInput>
           </IonCol>
         </IonRow>
