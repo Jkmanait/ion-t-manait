@@ -16,7 +16,7 @@ import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, sq
 import Home from './pages/home';
 
 import Profile from './pages/profile';
-import Tab2 from './pages/Tab2';
+import Tab2 from './pages/click-counter';
 import Tab3 from './pages/Tab3';
 
 /* Core CSS required for Ionic components to work properly */
