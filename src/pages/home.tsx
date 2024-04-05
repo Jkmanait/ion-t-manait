@@ -11,7 +11,7 @@ const Home: React.FC = () => {
                   <IonTitle>Home</IonTitle>
               </IonToolbar>
           </IonHeader>
-          <IonContent fullscreen>
+          <IonContent fullscreen className="home-content">
               <IonHeader collapse="condense">
                   <IonToolbar>
                       <IonTitle size="large">Home</IonTitle>
@@ -20,10 +20,11 @@ const Home: React.FC = () => {
 
               {/* Content */}
               <IonCard>
-
                   <IonCardHeader>
-                      <IonCardSubtitle>Welcome to my First App!</IonCardSubtitle>
-                      <IonImg src="path_to_your_image" alt="Image" />
+                      <IonCardSubtitle className="bold-text">Welcome to my First App!</IonCardSubtitle>
+                      <br/>
+                      <IonImg src="../src/assets/img/avatar.PNG" alt="Image" />
+                      <br/>
                       <IonCardTitle>This is the home page</IonCardTitle>
                   </IonCardHeader>
 
