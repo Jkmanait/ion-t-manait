@@ -1,0 +1,6 @@
+.home-content {
+    background-image: url('../src/assets/img/background.jpg'); /* Adjust the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
