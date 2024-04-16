@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { calculatorOutline, closeCircle, closeCircleSharp, closeOutline, ellipse, home, homeOutline, informationCircleOutline, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
 
 // Home resources
 import Home from './pages/home';
@@ -71,16 +71,16 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           {/* Home Tab Button */}
           <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={home} />
+            <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="blank" href="/blank">
-            <IonIcon aria-hidden="true" icon={personOutline} />
+            <IonIcon aria-hidden="true" icon={closeOutline} />
             <IonLabel>Blank</IonLabel>
           </IonTabButton>
           <IonTabButton tab="info" href="/info">
-            <IonIcon aria-hidden="true" icon={speedometerOutline} />
+            <IonIcon aria-hidden="true" icon={informationCircleOutline} />
             <IonLabel>Info</IonLabel>
           </IonTabButton>
           <IonTabButton tab="calculator" href="/calculator">
