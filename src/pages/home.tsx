@@ -1,6 +1,7 @@
 import {
   IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
-  IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonImg
+  IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonImg,
+  IonLabel, IonItem, IonIcon, IonThumbnail
 } from '@ionic/react';
 
 const Home: React.FC = () => {
@@ -19,7 +20,13 @@ const Home: React.FC = () => {
               </IonHeader>
 
               {/* Content */}
-              
+              <br/>
+              <IonItem>
+              <IonThumbnail slot="start">
+                  <IonIcon icon="finger-"></IonIcon>
+                  </IonThumbnail>
+                  <IonLabel>Click Counter</IonLabel>
+              </IonItem>
 
           </IonContent>
       </IonPage>
