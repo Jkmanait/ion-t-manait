@@ -15,8 +15,8 @@ import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, sq
 // Home resources
 import Home from './pages/home';
 
-import Profile from './pages/blank';
-import ClickCounter from './pages/info';
+import Blank from './pages/blank';
+import Info from './pages/info';
 import Calculator from './pages/calculator';
 
 /* Core CSS required for Ionic components to work properly */
@@ -56,11 +56,11 @@ const App: React.FC = () => (
             <Home />
           </Route>
 
-          <Route exact path="/profile">
-            <Profile />
+          <Route exact path="/blank">
+            <Blank />
           </Route>
-          <Route exact path="/click-counter">
-            <ClickCounter />
+          <Route exact path="/info">
+            <Info />
           </Route>
           <Route path="/calculator">
             <Calculator />
@@ -75,13 +75,13 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="blank" href="/blank">
             <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>Profile</IonLabel>
+            <IonLabel>Blank</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="click-counter" href="/click-counter">
+          <IonTabButton tab="info" href="/info">
             <IonIcon aria-hidden="true" icon={speedometerOutline} />
-            <IonLabel>Click Counter</IonLabel>
+            <IonLabel>Info</IonLabel>
           </IonTabButton>
           <IonTabButton tab="calculator" href="/calculator">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
