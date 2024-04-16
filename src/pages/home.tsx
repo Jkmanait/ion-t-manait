@@ -19,20 +19,7 @@ const Home: React.FC = () => {
               </IonHeader>
 
               {/* Content */}
-              <IonCard>
-                  <IonCardHeader>
-                      <IonCardSubtitle className="bold-text">Welcome to my First App!</IonCardSubtitle>
-                      <br/>
-                      <IonImg src="../src/assets/img/avatar.PNG" alt="Image" />
-                      <br/>
-                      <IonCardTitle>This is the home page</IonCardTitle>
-                  </IonCardHeader>
-
-                  <IonCardContent>
-                      <p>This is where you can display your home page content.</p>
-                      <IonButton expand="block" routerLink="/profile">Go to Profile</IonButton>
-                  </IonCardContent>
-              </IonCard>
+              
 
           </IonContent>
       </IonPage>
