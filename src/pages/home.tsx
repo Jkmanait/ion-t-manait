@@ -1,42 +1,52 @@
+import React from 'react';
 import {
-  IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
-  IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonImg
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCardContent,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonRouterLink,
+  IonIcon
 } from '@ionic/react';
+import { fingerPrintOutline, heartOutline } from 'ionicons/icons'; // Import the icon you want to use
 
-const Home: React.FC = () => {
+const CardExample: React.FC = () => {
   return (
-      <IonPage>
-          <IonHeader>
-              <IonToolbar>
-                  <IonTitle>Home</IonTitle>
-              </IonToolbar>
-          </IonHeader>
-          <IonContent fullscreen className="home-content">
-              <IonHeader collapse="condense">
-                  <IonToolbar>
-                      <IonTitle size="large">Home</IonTitle>
-                  </IonToolbar>
-              </IonHeader>
-
-              {/* Content */}
-              <IonCard>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Ionic Card Example</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent>
+        <IonGrid>
+          <IonRow>
+            <IonCol size="6">
+              <IonRouterLink href="/card1">
+                <IonCard>
                   <IonCardHeader>
-                      <IonCardSubtitle className="bold-text">Welcome to my First App!</IonCardSubtitle>
-                      <br/>
-                      <IonImg src="../src/assets/img/avatar.PNG" alt="Image" />
-                      <br/>
-                      <IonCardTitle>This is the home page</IonCardTitle>
+                    <IonIcon slot="start" icon={fingerPrintOutline} /> {/* Icon */}
+                    <IonCardSubtitle></IonCardSubtitle>
+                    <IonCardTitle>Click Counter</IonCardTitle>
                   </IonCardHeader>
-
-                  <IonCardContent>
-                      <p>This is where you can display your home page content.</p>
-                      <IonButton expand="block" routerLink="/profile">Go to Profile</IonButton>
-                  </IonCardContent>
-              </IonCard>
-
-          </IonContent>
-      </IonPage>
+                  
+                </IonCard>
+              </IonRouterLink>
+            </IonCol>
+            {/* Repeat for other cards */}
+          </IonRow>
+        </IonGrid>
+      </IonContent>
+    </IonPage>
   );
 };
 
-export default Home;
+export default CardExample;

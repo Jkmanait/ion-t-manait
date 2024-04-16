@@ -10,13 +10,13 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { calculatorOutline, closeCircle, closeCircleSharp, closeOutline, ellipse, home, homeOutline, informationCircleOutline, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
 
 // Home resources
 import Home from './pages/home';
 
-import Profile from './pages/profile';
-import ClickCounter from './pages/click-counter';
+import Blank from './pages/blank';
+import Info from './pages/info';
 import Calculator from './pages/calculator';
 
 /* Core CSS required for Ionic components to work properly */
@@ -56,11 +56,11 @@ const App: React.FC = () => (
             <Home />
           </Route>
 
-          <Route exact path="/profile">
-            <Profile />
+          <Route exact path="/blank">
+            <Blank />
           </Route>
-          <Route exact path="/click-counter">
-            <ClickCounter />
+          <Route exact path="/info">
+            <Info />
           </Route>
           <Route path="/calculator">
             <Calculator />
@@ -71,17 +71,17 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           {/* Home Tab Button */}
           <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={home} />
+            <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="profile" href="/profile">
-            <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>Profile</IonLabel>
+          <IonTabButton tab="blank" href="/blank">
+            <IonIcon aria-hidden="true" icon={closeOutline} />
+            <IonLabel>Blank</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="click-counter" href="/click-counter">
-            <IonIcon aria-hidden="true" icon={speedometerOutline} />
-            <IonLabel>Click Counter</IonLabel>
+          <IonTabButton tab="info" href="/info">
+            <IonIcon aria-hidden="true" icon={informationCircleOutline} />
+            <IonLabel>Info</IonLabel>
           </IonTabButton>
           <IonTabButton tab="calculator" href="/calculator">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />

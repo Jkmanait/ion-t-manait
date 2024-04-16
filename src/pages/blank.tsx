@@ -1,20 +1,20 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonAlert, IonButton, IonActionSheet } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './profile.css';
+import './blank.css';
 
-const profile: React.FC = () => {
+const blank: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Profile</IonTitle>
+          <IonTitle>Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Profile</IonTitle>
+            <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
         
@@ -69,4 +69,4 @@ const profile: React.FC = () => {
   );
 };
 
-export default profile;
+export default blank;
