@@ -30,13 +30,13 @@ const Calculator: React.FC = () => {
       <IonPage>
         <IonHeader>
           <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/home" /> {/* Back button */}
+          </IonButtons>
             <IonTitle>Calculator</IonTitle>
           </IonToolbar>
         </IonHeader>
         
-        <IonButtons slot="start">
-          <IonBackButton defaultHref="/" />
-        </IonButtons>
         <IonContent fullscreen className="ion-padding" style={{ backgroundColor: 'dark' }}>
           <IonGrid>
           <IonRow>
