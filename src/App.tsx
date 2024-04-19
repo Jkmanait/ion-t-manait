@@ -16,6 +16,7 @@ import { calculatorOutline, closeOutline, homeOutline, informationCircleOutline 
 import Home from './pages/home';
 import Blank from './pages/blank';
 import ClickCounter from './pages/click-counter';
+import Todolist from './pages/to-do-list';
 import Info from './pages/info';
 import Calculator from './pages/calculator'; // Import Calculator component
 
@@ -71,6 +72,10 @@ const App: React.FC = () => (
 
           <Route path="/info">
             <Info />
+          </Route>
+
+          <Route path="/to-do-list">
+            <Todolist />
           </Route>
 
         </IonRouterOutlet>

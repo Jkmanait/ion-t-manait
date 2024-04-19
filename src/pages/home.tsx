@@ -48,15 +48,15 @@ const CardExample: React.FC = () => {
           </IonCol>
 
           <IonCol size="6">
-            <IonRouterLink href="/card3">
-              <IonCard>
+            
+              <IonCard href="/todolist">
                 <IonCardHeader>
                   <IonIcon slot="start" icon={rocketOutline} /> {/* Icon */}
                   <IonCardSubtitle></IonCardSubtitle>
                   <IonCardTitle className="ion-text-center">To Do List</IonCardTitle>
                 </IonCardHeader>
               </IonCard>
-            </IonRouterLink>
+
           </IonCol>
 
           <IonCol size="6">
