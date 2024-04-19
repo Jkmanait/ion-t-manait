@@ -15,7 +15,8 @@ import { calculatorOutline, closeOutline, homeOutline, informationCircleOutline 
 // Home resources
 import Home from './pages/home';
 import Blank from './pages/blank';
-// import Info from './pages/info';
+import ClickCounter from './pages/click-counter';
+import Info from './pages/info';
 import Calculator from './pages/calculator'; // Import Calculator component
 
 /* Core CSS required for Ionic components to work properly */
@@ -58,13 +59,18 @@ const App: React.FC = () => (
           <Route exact path="/blank">
             <Blank />
           </Route>
-          {/* <Route exact path="/info">
-            <Info />
-          </Route> */}
+
+          <Route exact path="/click-counter">
+            <ClickCounter />
+          </Route>
 
           {/* Calculator Router */}
           <Route path="/calculator">
             <Calculator />
+          </Route>
+
+          <Route path="/info">
+            <Info />
           </Route>
 
         </IonRouterOutlet>

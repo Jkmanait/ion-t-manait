@@ -27,28 +27,24 @@ const CardExample: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonGrid>
-          <IonCol size="6">
-            <IonRouterLink href="/.tsx">
-              <IonCard>
+          <IonCol size="6"> 
+              <IonCard href="/click-counter">
                 <IonCardHeader>
                   <IonIcon slot="start" icon={fingerPrintOutline} /> {/* Icon */}
                   <IonCardSubtitle></IonCardSubtitle>
                   <IonCardTitle className="ion-text-center">Click Counter</IonCardTitle>
                 </IonCardHeader>
-              </IonCard>
-            </IonRouterLink>
+              </IonCard>        
           </IonCol>
 
-          <IonCol size="6">
-            <IonRouterLink href="/card2">
-              <IonCard>
+          <IonCol size="6"> 
+              <IonCard href="/calculator">
                 <IonCardHeader>
                   <IonIcon slot="start" icon={heartOutline} /> {/* Icon */}
                   <IonCardSubtitle></IonCardSubtitle>
                   <IonCardTitle className="ion-text-center">Calculator</IonCardTitle>
                 </IonCardHeader>
               </IonCard>
-            </IonRouterLink>
           </IonCol>
 
           <IonCol size="6">
