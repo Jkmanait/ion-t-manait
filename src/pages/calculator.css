@@ -1,0 +1,32 @@
+.calculator-container {
+    background-color: #000000; /* Black background */
+  }
+  
+  .calculator-button {
+    background-color: #FFFFFF; /* White button background */
+    color: #000000; /* Black button text color */
+  }
+  
+  .calculator-button:hover {
+    background-color: #CCCCCC; /* Light gray button background on hover */
+  }
+  
+  .calculator-input {
+    color: #FFFFFF; /* White input text color */
+    background-color: #000000; /* Black input background */
+    border-color: #FFFFFF; /* White input border color */
+  }
+  
+  .calculator-input:focus {
+    border-color: #CCCCCC; /* Light gray input border color on focus */
+  }
+  
+  /* Additional styles for the header */
+  ion-header {
+    background-color: #000000; /* Black header background */
+  }
+  
+  ion-title {
+    color: #FFFFFF; /* White title text color */
+  }
+  
