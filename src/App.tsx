@@ -17,7 +17,7 @@ import Home from './pages/home';
 
 import Blank from './pages/blank';
 import Info from './pages/info';
-import Calculator from './pages/calculator';
+// import Calculator from './pages/calculator';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -62,9 +62,9 @@ const App: React.FC = () => (
           <Route exact path="/info">
             <Info />
           </Route>
-          <Route path="/calculator">
+          {/* <Route path="/calculator">
             <Calculator />
-          </Route>
+          </Route> */}
 
         </IonRouterOutlet>
 
@@ -83,10 +83,10 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={informationCircleOutline} />
             <IonLabel>Info</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="calculator" href="/calculator">
+          {/* <IonTabButton tab="calculator" href="/calculator">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
             <IonLabel>Calculator</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
         </IonTabBar>
 
       </IonTabs>
