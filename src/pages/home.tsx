@@ -28,7 +28,7 @@ const CardExample: React.FC = () => {
       <IonContent>
         <IonGrid>
           <IonCol size="6">
-            <IonRouterLink href="/card1">
+            <IonRouterLink href="/.tsx">
               <IonCard>
                 <IonCardHeader>
                   <IonIcon slot="start" icon={fingerPrintOutline} /> {/* Icon */}

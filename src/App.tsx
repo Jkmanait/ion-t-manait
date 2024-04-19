@@ -10,14 +10,13 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, closeCircle, closeCircleSharp, closeOutline, ellipse, home, homeOutline, informationCircleOutline, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { calculatorOutline, closeOutline, homeOutline, informationCircleOutline } from 'ionicons/icons';
 
 // Home resources
 import Home from './pages/home';
-
 import Blank from './pages/blank';
-import Info from './pages/info';
-// import Calculator from './pages/calculator';
+// import Info from './pages/info';
+import Calculator from './pages/calculator'; // Import Calculator component
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -47,7 +46,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           
           {/* Application default route */}
-           <Route exact path="/">
+          <Route exact path="/">
             <Redirect to="/home" />
           </Route>
 
@@ -59,12 +58,14 @@ const App: React.FC = () => (
           <Route exact path="/blank">
             <Blank />
           </Route>
-          <Route exact path="/info">
+          {/* <Route exact path="/info">
             <Info />
-          </Route>
-          {/* <Route path="/calculator">
-            <Calculator />
           </Route> */}
+
+          {/* Calculator Router */}
+          <Route path="/calculator">
+            <Calculator />
+          </Route>
 
         </IonRouterOutlet>
 
