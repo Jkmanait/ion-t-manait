@@ -29,7 +29,7 @@ import {
 import './home.css';
 
 //Ionic Icons
-import { speedometerOutline,calculator,pencil, chatbubble} from 'ionicons/icons';
+import { fingerPrint,calculator,pencil, chatbubble, fingerPrintOutline} from 'ionicons/icons';
 
 //Additional Routes
 import ClickCounter from './click-counter';
@@ -37,7 +37,7 @@ import ClickCounter from './click-counter';
 const cardData = [
   {
     title: 'Click Counter',
-    icon: speedometerOutline,
+    icon: fingerPrintOutline,
     subtitle: 'Applet #1',
     link: '/click-counter'
   },
