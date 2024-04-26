@@ -1,79 +1,119 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
+  IonBackButton,
+  IonButton,
+  IonButtons,
   IonCard,
+  IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonCardContent,
-  IonGrid,
   IonCol,
-  IonRouterLink,
-  IonIcon
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonIcon,
+  IonInput,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonPage,
+  IonRow,
+  IonTitle,
+  IonToolbar,
+  IonItemDivider,
+  IonSearchbar
 } from '@ionic/react';
-import { fingerPrintOutline, heartOutline, rocketOutline, thumbsUpOutline } from 'ionicons/icons'; // Import additional icons
 
-const CardExample: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Home</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonGrid>
-          <IonCol size="6"> 
-              <IonCard href="/click-counter">
-                <IonCardHeader>
-                  <IonIcon slot="start" icon={fingerPrintOutline} /> {/* Icon */}
-                  <IonCardSubtitle></IonCardSubtitle>
-                  <IonCardTitle className="ion-text-center">Click Counter</IonCardTitle>
-                </IonCardHeader>
-              </IonCard>        
-          </IonCol>
+//Custom CSS
+import './home.css';
 
-          <IonCol size="6"> 
-              <IonCard href="/calculator">
+//Ionic Icons
+import { speedometerOutline,calculator,pencil, chatbubble} from 'ionicons/icons';
+
+//Additional Routes
+import ClickCounter from './clickcounter';
+
+const cardData = [
+  {
+    title: 'Click Counter',
+    icon: speedometerOutline,
+    subtitle: 'Applet #1',
+    link: '/clickcounter'
+  },
+  {
+    title: 'Calculator',
+    icon: calculator,
+    subtitle: 'Applet #2',
+    link: '/calculator'
+  },
+  {
+    title: 'To Do List',
+    icon: pencil,
+    subtitle: 'Applet #3',
+    link: '/todolist'
+  },
+  {
+    title: 'Quotes Generator',
+    icon: chatbubble,
+    subtitle: 'Applet #4',
+    link: '/quotesgenerator'
+  }
+  
+];
+
+  const Home: React.FC = () => {
+
+    {/*Dynamic Search*/}
+    const [searchTerm, setSearchTerm] = useState<string>('');
+
+    return (
+      <IonPage>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>Home</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent fullscreen>
+          <IonHeader collapse="condense">
+            <IonToolbar>
+              <IonTitle size="large">Home</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+        {/*Dynamic Search*/}
+        <>
+          <IonSearchbar 
+            value={searchTerm} 
+            onIonInput={(e) => setSearchTerm(e.target.value ?? '')} 
+          />
+          
+          {cardData
+            .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
+            .map((card, index) => (
+              <IonCard key={index} href={card.link}>
                 <IonCardHeader>
-                  <IonIcon slot="start" icon={heartOutline} /> {/* Icon */}
-                  <IonCardSubtitle></IonCardSubtitle>
-                  <IonCardTitle className="ion-text-center">Calculator</IonCardTitle>
+                  <IonCardTitle>
+                    <IonGrid>
+                      <IonRow>
+                        <IonCol push=".75">
+                          <IonIcon className="home-card-icon" icon={card.icon} color="primary" />
+                        </IonCol>
+                        <IonCol pull='3'>
+                          <div className="home-card-title">{card.title}</div>
+                          <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
+                        </IonCol>
+                      </IonRow>
+                    </IonGrid>
+                  </IonCardTitle>
                 </IonCardHeader>
               </IonCard>
-          </IonCol>
-
-          <IonCol size="6">
-            
-              <IonCard href="/to-do-list">
-                <IonCardHeader>
-                  <IonIcon slot="start" icon={rocketOutline} /> {/* Icon */}
-                  <IonCardSubtitle></IonCardSubtitle>
-                  <IonCardTitle className="ion-text-center">To Do List</IonCardTitle>
-                </IonCardHeader>
-              </IonCard>
-
-          </IonCol>
-
-          <IonCol size="6">
-            <IonRouterLink href="/card4">
-              <IonCard>
-                <IonCardHeader>
-                  <IonIcon slot="start" icon={thumbsUpOutline} /> {/* Icon */}
-                  <IonCardSubtitle></IonCardSubtitle>
-                  <IonCardTitle className="ion-text-center"></IonCardTitle>
-                </IonCardHeader>
-              </IonCard>
-            </IonRouterLink>
-          </IonCol>
-        </IonGrid>
-      </IonContent>
-    </IonPage>
-  );
-};
-
-export default CardExample;
+          ))}
+        </>
+          </IonContent>
+        </IonPage>
+    );
+  };
+  
+  //
+  export default Home;
+  
