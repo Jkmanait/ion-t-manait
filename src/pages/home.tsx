@@ -32,14 +32,14 @@ import './home.css';
 import { speedometerOutline,calculator,pencil, chatbubble} from 'ionicons/icons';
 
 //Additional Routes
-import ClickCounter from './clickcounter';
+import ClickCounter from './click-counter';
 
 const cardData = [
   {
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/clickcounter'
+    link: '/click-counter'
   },
   {
     title: 'Calculator',
@@ -51,10 +51,10 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/todolist'
+    link: '/to-do-list'
   },
   {
-    title: 'Quotes Generator',
+    title: 'Quote Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
     link: '/quotesgenerator'
