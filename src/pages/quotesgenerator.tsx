@@ -90,7 +90,7 @@ const QuotesGenerator: React.FC = () => {
           <IonGrid>
             <IonRow>
                 <IonCol size="" push="">
-                <IonButton id="present-alert" color="warning" expand="full" onClick={handleOpenAlert}>Click me</IonButton> 
+                <IonButton id="present-alert" color="dark" expand="full" onClick={handleOpenAlert}>Click me</IonButton> 
                 <IonAlert
                   isOpen={showAlert}
                   onDidDismiss={handleAlertDismiss} // Call the handleAlertDismiss function when the alert is closed

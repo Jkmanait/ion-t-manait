@@ -29,10 +29,11 @@ import {
 import './home.css';
 
 //Ionic Icons
-import { fingerPrint,calculator,pencil, chatbubble, fingerPrintOutline} from 'ionicons/icons';
+import { calculator, pencil, chatbubble, fingerPrintOutline} from 'ionicons/icons';
 
 //Additional Routes
 import ClickCounter from './click-counter';
+
 
 const cardData = [
   {

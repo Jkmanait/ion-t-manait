@@ -31,8 +31,8 @@ const ClickCounter: React.FC = () => {
         </IonHeader>
         <div className="ion-text-center ion-padding">
           <h2>Clicks: {clickCount}</h2>
-          <IonButton onClick={incrementCount}>Click Me</IonButton>
-          <IonButton onClick={resetCount} color="danger">Erase</IonButton>
+          <IonButton onClick={incrementCount} color="dark">Click Me</IonButton>
+          <IonButton onClick={resetCount} color="light">Erase</IonButton>
         </div>
       </IonContent>
     </IonPage>
