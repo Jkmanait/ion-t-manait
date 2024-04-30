@@ -22,52 +22,71 @@ import {
   IonTitle,
   IonToolbar,
   IonItemDivider,
-  IonSearchbar
+  IonSearchbar,
+  IonBadge
 } from '@ionic/react';
 
 //Custom CSS
 import './home.css';
 
 //Ionic Icons
-import { calculator, pencil, chatbubble, fingerPrintOutline} from 'ionicons/icons';
-
-//Additional Routes
-import ClickCounter from './click-counter';
-
+import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase} from 'ionicons/icons';
 
 const cardData = [
   {
     title: 'Click Counter',
-    icon: fingerPrintOutline,
+    icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/click-counter'
+    link: '/clickcounter',
+    tags: {
+      tag1: logoIonic
+    }
+
   },
   {
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/calculator'
+    link: '/calculator',
+    tags: {
+      tag1: logoIonic
+    }
   },
   {
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/to-do-list'
+    link: '/todolist',
+    tags: {
+      tag1: logoIonic
+    }
   },
   {
-    title: 'Quote Generator',
+    title: 'Quotes Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/quotesgenerator'
+    link: '/quotegenerator',
+    tags: {
+      tag1: logoIonic
+    }
+  },
+  {
+    title: 'Notes',
+    icon: readerOutline,
+    subtitle: 'Applet #5',
+    link: '/notes',
+    tags: {
+      tag1: logoIonic, 
+      tag2: logoFirebase 
+    }
   }
   
 ];
 
-  const Home: React.FC = () => {
-
-    {/*Dynamic Search*/}
-    const [searchTerm, setSearchTerm] = useState<string>('');
-
+const Home: React.FC = () => {
+  {/*Dynamic Search*/}
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  
     return (
       <IonPage>
         <IonHeader>
@@ -81,8 +100,8 @@ const cardData = [
               <IonTitle size="large">Home</IonTitle>
             </IonToolbar>
           </IonHeader>
-        {/*Dynamic Search*/}
-        <>
+          
+          {/*Dynamic Search*/}
           <IonSearchbar 
             value={searchTerm} 
             onIonInput={(e) => setSearchTerm(e.target.value ?? '')} 
@@ -96,25 +115,31 @@ const cardData = [
                   <IonCardTitle>
                     <IonGrid>
                       <IonRow>
-                        <IonCol push=".75">
+                        <IonCol size="2">
                           <IonIcon className="home-card-icon" icon={card.icon} color="primary" />
                         </IonCol>
-                        <IonCol pull='3'>
-                          <div className="home-card-title">{card.title}</div>
-                          <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
-                        </IonCol>
+                        <IonCol size="auto">
+                            <div className="home-card-title">{card.title}</div>
+                            <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
+                            {card.tags && Object.entries(card.tags).map(([key, icon], i) => (
+                              <IonIcon
+                                key={i}
+                                className="home-card-subicon"
+                                icon={icon}
+                                color="primary" // Set color as needed
+                              />
+                            ))}
+                          </IonCol>
                       </IonRow>
                     </IonGrid>
                   </IonCardTitle>
                 </IonCardHeader>
               </IonCard>
           ))}
-        </>
-          </IonContent>
-        </IonPage>
+        </IonContent>
+      </IonPage>
     );
-  };
+};
   
-  //
-  export default Home;
+export default Home;
   
