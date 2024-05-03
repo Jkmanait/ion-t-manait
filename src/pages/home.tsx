@@ -37,7 +37,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/clickcounter',
+    link: '/click-counter',
     tags: {
       tag1: logoIonic
     }
@@ -56,7 +56,7 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/todolist',
+    link: '/to-do-list',
     tags: {
       tag1: logoIonic
     }
@@ -65,7 +65,7 @@ const cardData = [
     title: 'Quotes Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/quotegenerator',
+    link: '/quotesgenerator',
     tags: {
       tag1: logoIonic
     }
