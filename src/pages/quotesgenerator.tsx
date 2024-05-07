@@ -72,7 +72,7 @@ const QuotesGenerator: React.FC = () => {
       <IonHeader>
         <IonToolbar>
         <IonButtons slot="start">
-            <IonBackButton defaultHref="/app/home" /> {/* Back button */}
+            <IonBackButton defaultHref="/" /> {/* Back button */}
           </IonButtons>
           <IonTitle>Quote Generator</IonTitle>
         </IonToolbar>
