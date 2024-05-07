@@ -28,10 +28,10 @@ import {
   IonAvatar,
   IonThumbnail
 } from '@ionic/react';
-import './profile.css';
+
 
 //Dynamic data reference
-import rizzCard from '../assets/json/rizzCard.json';
+import rizzCard from '../../assets/json/rizzCard.json';
 
 const QuotesGenerator: React.FC = () => {
 

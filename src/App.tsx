@@ -15,11 +15,11 @@ import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, sq
 // Home resources
 import Home from './pages/home';
 
-import Profile from './pages/profile';
-import ClickCounter from './pages/click-counter'; 
-import Calculator from './pages/calculator';
-import Todolist from './pages/to-do-list';
-import QuotesGenerator from './pages/quotesgenerator';
+import Profile from './pages/profile/profile';
+import ClickCounter from './pages/click-counter/click-counter'; 
+import Calculator from './pages/calculator/calculator';
+import Todolist from './pages/todolist/to-do-list';
+import QuotesGenerator from './pages/quotesgenerator/quotesgenerator';
 import Notes from './pages/notes/notes';
 
 /* Core CSS required for Ionic components to work properly */

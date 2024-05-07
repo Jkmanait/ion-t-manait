@@ -37,7 +37,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/ion-t-manait/click-counter',
+    link: '/ion-t-manait/home/click-counter',
     tags: {
       tag1: logoIonic
     }
@@ -47,7 +47,7 @@ const cardData = [
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/ion-t-manait/calculator',
+    link: '/ion-t-manait/home/calculator',
     tags: {
       tag1: logoIonic
     }
@@ -56,7 +56,7 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/ion-t-manait/to-do-list',
+    link: '/ion-t-manait/home/to-do-list',
     tags: {
       tag1: logoIonic
     }
@@ -65,7 +65,7 @@ const cardData = [
     title: 'Quotes Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/ion-t-manait/quotesgenerator',
+    link: '/ion-t-manait/home/quotesgenerator',
     tags: {
       tag1: logoIonic
     }
@@ -74,7 +74,7 @@ const cardData = [
     title: 'Notes',
     icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/ion-t-manait/notes',
+    link: '/ion-t-manait/home/notes',
     tags: {
       tag1: logoIonic, 
       tag2: logoFirebase 
