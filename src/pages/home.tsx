@@ -30,7 +30,7 @@ import {
 import './home.css';
 
 //Ionic Icons
-import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase} from 'ionicons/icons';
+import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase, logoReact} from 'ionicons/icons';
 
 const cardData = [
   {
@@ -39,7 +39,8 @@ const cardData = [
     subtitle: 'Applet #1',
     link: '/ion-t-manait/home/click-counter',
     tags: {
-      tag1: logoIonic
+      tag1: logoIonic,
+      tag2: logoReact
     }
 
   },
@@ -49,7 +50,8 @@ const cardData = [
     subtitle: 'Applet #2',
     link: '/ion-t-manait/home/calculator',
     tags: {
-      tag1: logoIonic
+      tag1: logoIonic,
+      tag2: logoReact
     }
   },
   {
@@ -58,7 +60,8 @@ const cardData = [
     subtitle: 'Applet #3',
     link: '/ion-t-manait/home/to-do-list',
     tags: {
-      tag1: logoIonic
+      tag1: logoIonic,
+      tag2: logoReact
     }
   },
   {
@@ -67,7 +70,8 @@ const cardData = [
     subtitle: 'Applet #4',
     link: '/ion-t-manait/home/quotesgenerator',
     tags: {
-      tag1: logoIonic
+      tag1: logoIonic,
+      tag2: logoReact
     }
   },
   {
@@ -77,7 +81,8 @@ const cardData = [
     link: '/ion-t-manait/home/notes',
     tags: {
       tag1: logoIonic, 
-      tag2: logoFirebase 
+      tag2: logoReact,
+      tag3: logoFirebase 
     }
   }
   
