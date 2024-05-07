@@ -15,11 +15,11 @@ import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, sq
 // Home resources
 import Home from './pages/home';
 
-import Profile from './pages/profile';
-import ClickCounter from './pages/click-counter'; 
-import Calculator from './pages/calculator';
-import Todolist from './pages/to-do-list';
-import QuotesGenerator from './pages/quotesgenerator';
+import Profile from './pages/profile/profile';
+import ClickCounter from './pages/click-counter/click-counter'; 
+import Calculator from './pages/calculator/calculator';
+import Todolist from './pages/todolist/to-do-list';
+import QuotesGenerator from './pages/quotesgenerator/quotesgenerator';
 import Notes from './pages/notes/notes';
 
 /* Core CSS required for Ionic components to work properly */
@@ -50,34 +50,34 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           
           {/* Application default route */}
-           <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path="/ion-t-manait/">
+            <Redirect to="/ion-t-manait/home" />
           </Route>
 
           {/* Home Router */}
-          <Route exact path="/home">
+          <Route exact path="/ion-t-manait/home">
             <Home />
           </Route>
 
-          <Route exact path="/profile">
+          <Route exact path="/ion-t-manait/profile">
             <Profile />
           </Route>
-          <Route exact path="/click-counter">
+          <Route exact path="/ion-t-manait/click-counter">
             <ClickCounter />
           </Route>
-          <Route path="/calculator">
+          <Route path="/ion-t-manait/calculator">
             <Calculator />
           </Route>
 
-          <Route path="/to-do-list">
+          <Route path="/ion-t-manait/to-do-list">
             <Todolist />
           </Route>
 
-          <Route path="/quotesgenerator">
+          <Route path="/ion-t-manait/quotesgenerator">
             <QuotesGenerator />
           </Route>
 
-          <Route path="/notes">
+          <Route path="/ion-t-manait/notes">
             <Notes />
           </Route>
 
@@ -85,12 +85,12 @@ const App: React.FC = () => (
 
         <IonTabBar slot="bottom">
           {/* Home Tab Button */}
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="home" href="/ion-t-manait/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
        
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="profile" href="/ion-t-manait/profile">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>

@@ -28,10 +28,10 @@ import {
   IonAvatar,
   IonThumbnail
 } from '@ionic/react';
-import './profile.css';
+
 
 //Dynamic data reference
-import rizzCard from '../assets/json/rizzCard.json';
+import rizzCard from '../../assets/json/rizzCard.json';
 
 const QuotesGenerator: React.FC = () => {
 
@@ -72,7 +72,7 @@ const QuotesGenerator: React.FC = () => {
       <IonHeader>
         <IonToolbar>
         <IonButtons slot="start">
-            <IonBackButton defaultHref="/home" /> {/* Back button */}
+            <IonBackButton defaultHref="/" /> {/* Back button */}
           </IonButtons>
           <IonTitle>Quote Generator</IonTitle>
         </IonToolbar>
