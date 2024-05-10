@@ -37,7 +37,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/ion-t-manait/home/click-counter',
+    link: 'home/click-counter',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -48,7 +48,7 @@ const cardData = [
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/ion-t-manait/home/calculator',
+    link: 'home/calculator',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -58,17 +58,17 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/ion-t-manait/home/to-do-list',
+    link: 'home/to-do-list',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
     }
   },
   {
-    title: 'Quotes Generator',
+    title: 'Quote Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/ion-t-manait/home/quotesgenerator',
+    link: 'home/quotesgenerator',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -78,10 +78,10 @@ const cardData = [
     title: 'Notes',
     icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/ion-t-manait/home/notes',
+    link: 'home/notes',
     tags: {
-      tag1: logoIonic, 
-      tag2: logoReact,
+      tag1: logoIonic,
+      tag2: logoReact, 
       tag3: logoFirebase 
     }
   }
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           {cardData
             .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
             .map((card, index) => (
-              <IonCard key={index} href={card.link} routerDirection='forward'>
+              <IonCard key={index} routerLink={card.link} routerDirection='forward'>
                 <IonCardHeader>
                   <IonCardTitle>
                     <IonGrid>

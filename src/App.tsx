@@ -62,22 +62,22 @@ const App: React.FC = () => (
           <Route exact path="/ion-t-manait/profile">
             <Profile />
           </Route>
-          <Route exact path="/ion-t-manait/click-counter">
+          <Route exact path="/ion-t-manait/home/click-counter">
             <ClickCounter />
           </Route>
-          <Route path="/ion-t-manait/calculator">
+          <Route path="/ion-t-manait/home/calculator">
             <Calculator />
           </Route>
 
-          <Route path="/ion-t-manait/to-do-list">
+          <Route path="/ion-t-manait/home/to-do-list">
             <Todolist />
           </Route>
 
-          <Route path="/ion-t-manait/quotesgenerator">
+          <Route path="/ion-t-manait/home/quotesgenerator">
             <QuotesGenerator />
           </Route>
 
-          <Route path="/ion-t-manait/notes">
+          <Route path="/ion-t-manait/home/notes">
             <Notes />
           </Route>
 
