@@ -35,55 +35,38 @@ import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIo
 const cardData = [
   {
     title: 'Click Counter',
-    icon: speedometerOutline,
+    // icon: speedometerOutline,
     subtitle: 'Applet #1',
     link: 'home/clickcounter',
-    tags: {
-      tag1: logoIonic,
-      tag2: logoReact
-    }
 
   },
   {
     title: 'Calculator',
-    icon: calculator,
+    // icon: calculator,
     subtitle: 'Applet #2',
     link: 'home/calculator',
-    tags: {
-      tag1: logoIonic,
-      tag2: logoReact
-    }
+  
   },
   {
     title: 'To Do List',
-    icon: pencil,
+    // icon: pencil,
     subtitle: 'Applet #3',
     link: 'home/todolist',
-    tags: {
-      tag1: logoIonic,
-      tag2: logoReact
-    }
+    
   },
   {
     title: 'Quote Generator',
-    icon: chatbubble,
+    // icon: chatbubble,
     subtitle: 'Applet #4',
     link: 'home/quotesgenerator',
-    tags: {
-      tag1: logoIonic,
-      tag2: logoReact
-    }
+    
   },
   {
     title: 'Notes',
-    icon: readerOutline,
+    // icon: readerOutline,
     subtitle: 'Applet #5',
     link: 'home/notes',
-    tags: {
-      tag1: logoIonic,
-      tag2: logoReact, 
-      tag3: logoFirebase 
-    }
+    
   }
   
 ];
@@ -126,14 +109,14 @@ const Home: React.FC = () => {
                         <IonCol size="auto">
                             <div className="home-card-title">{card.title}</div>
                             <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
-                            {card.tags && Object.entries(card.tags).map(([key, icon], i) => (
+                            {/* {card.tags && Object.entries(card.tags).map(([key, icon], i) => (
                               <IonIcon
                                 key={i}
                                 className="home-card-subicon"
                                 icon={icon}
                                 color="primary" // Set color as needed
                               />
-                            ))}
+                            ))} */}
                           </IonCol>
                       </IonRow>
                     </IonGrid>
