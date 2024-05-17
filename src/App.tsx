@@ -16,9 +16,9 @@ import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, sq
 import Home from './pages/home';
 
 import Profile from './pages/profile/profile';
-import ClickCounter from './pages/click-counter/click-counter'; 
+import ClickCounter from './pages/clickcounter/clickcounter'; 
 import Calculator from './pages/calculator/calculator';
-import Todolist from './pages/todolist/to-do-list';
+import Todolist from './pages/todolist/todolist';
 import QuotesGenerator from './pages/quotesgenerator/quotesgenerator';
 import Notes from './pages/notes/notes';
 
@@ -62,14 +62,14 @@ const App: React.FC = () => (
           <Route exact path="/ion-t-manait/profile">
             <Profile />
           </Route>
-          <Route exact path="/ion-t-manait/home/click-counter">
+          <Route exact path="/ion-t-manait/home/clickcounter">
             <ClickCounter />
           </Route>
           <Route path="/ion-t-manait/home/calculator">
             <Calculator />
           </Route>
 
-          <Route path="/ion-t-manait/home/to-do-list">
+          <Route path="/ion-t-manait/home/todolist">
             <Todolist />
           </Route>
 

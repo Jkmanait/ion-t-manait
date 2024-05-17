@@ -37,7 +37,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: 'home/click-counter',
+    link: 'home/clickcounter',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -58,7 +58,7 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: 'home/to-do-list',
+    link: 'home/todolist',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
