@@ -1,32 +1,28 @@
-/* General card styles */
-.home-card {
-    margin-bottom: 1rem; /* Add some space between cards */
-  }
-  
-  .home-card-icon {
-    font-size: 2rem; /* Adjust icon size */
-  }
-  
-  .home-card-title {
-    font-weight: bold; /* Make title bold */
-    margin-bottom: 0.25rem; /* Add space between title and subtitle */
-  }
-  
-  .home-card-subicon {
-    font-size: 1rem; /* Adjust subicon size */
-    margin-right: 0.5rem; /* Add space between subicons */
-  }
-  
-  /* Adjust following styles based on your design preferences */
-  ion-card-header {
-    background-color: #f5f5f5; /* Set header background color */
-  }
-  
-  ion-card-title {
-    color: #333; /* Set title text color */
-  }
-  
-  ion-card-subtitle {
-    color: #777; /* Set subtitle text color */
-  }
-  
+.home-card-title{
+  font-size: 20px;
+}
+
+.home-card-icon {
+  font-size: 3rem;
+}
+
+.home-card-subicon {
+  font-size: 1rem;
+}
+.gradient {
+  background: linear-gradient(to right, #1b1b1b, #525252); /* Adjust colors as needed */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-gif {
+  width: 25%; /* Adjust size as needed */
+  height: 25%; /* Maintain aspect ratio */
+  margin-left: 3rem;
+
+}

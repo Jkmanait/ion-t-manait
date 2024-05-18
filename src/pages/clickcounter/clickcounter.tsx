@@ -21,7 +21,11 @@ const ClickCounter: React.FC = () => {
             <IonBackButton defaultHref="/" /> {/* Back button */}
           </IonButtons>
           <IonTitle>Click Counter</IonTitle>
+        
         </IonToolbar>
+
+        
+
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">

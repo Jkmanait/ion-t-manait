@@ -32,41 +32,48 @@ import './home.css';
 //Ionic Icons
 import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase, logoReact} from 'ionicons/icons';
 
+import image1 from '../assets/img/click-counter.gif'; 
+import image2 from '../assets/img/calculator.gif'; 
+import image3 from '../assets/img/todolist.gif'; 
+import image4 from '../assets/img/generator.gif'; 
+import image5 from '../assets/img/notes.gif'; 
+
+
 const cardData = [
   {
     title: 'Click Counter',
-    // icon: speedometerOutline,
+    icon: speedometerOutline,
     subtitle: 'Applet #1',
     link: 'home/clickcounter',
-
+    image: image1
   },
   {
     title: 'Calculator',
-    // icon: calculator,
+    icon: calculator,
     subtitle: 'Applet #2',
     link: 'home/calculator',
-  
+    image: image2
   },
   {
     title: 'To Do List',
-    // icon: pencil,
+    icon: pencil,
     subtitle: 'Applet #3',
     link: 'home/todolist',
-    
+    image: image3
   },
   {
     title: 'Quote Generator',
-    // icon: chatbubble,
+    icon: chatbubble,
     subtitle: 'Applet #4',
     link: 'home/quotesgenerator',
-    
+    image: image4
   },
   {
     title: 'Notes',
-    // icon: readerOutline,
+    icon: readerOutline,
     subtitle: 'Applet #5',
     link: 'home/notes',
-    
+    image: image5
   }
   
 ];
@@ -103,9 +110,10 @@ const Home: React.FC = () => {
                   <IonCardTitle>
                     <IonGrid>
                       <IonRow>
-                        <IonCol size="2">
-                          {/* <IonIcon className="home-card-icon" icon={card.icon} color="primary" /> */}
-                        </IonCol>
+                        {/* <IonCol size="2">
+                          <IonIcon className="home-card-icon" icon={card.icon} color="primary" />
+                        </IonCol> */}
+                        <img src ={card.image} className="card-gif" />
                         <IonCol size="auto">
                             <div className="home-card-title">{card.title}</div>
                             <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
